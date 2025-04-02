@@ -1,0 +1,18 @@
+package itesm.ecommerce.application.service.ProductService;
+
+
+import itesm.ecommerce.application.service.ProductService;
+import itesm.ecommerce.domain.model.Product;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
+
+@ApplicationScoped
+public class CreateProductUseCase {
+
+    @Inject
+    ProductService productService;
+
+    public Product createProduct(Product product) {
+        return productService.createProduct(product);
+    }
+}

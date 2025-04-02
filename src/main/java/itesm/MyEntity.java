@@ -1,10 +1,11 @@
+/** 
 package itesm;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import jakarta.persistence.Entity;
 
 
-/**
+
  * Example JPA entity defined as a Panache Entity.
  * An ID field of Long type is provided, if you want to define your own ID field extends <code>PanacheEntityBase</code> instead.
  *
@@ -22,8 +23,9 @@ import jakarta.persistence.Entity;
  *         List<MyEntity> entities = MyEntity.listAll();
  *     }
  * }
- */
+
 @Entity
 public class MyEntity extends PanacheEntity {
     public String field;
-}
+*}
+*/
